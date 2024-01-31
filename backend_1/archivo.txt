@@ -1,0 +1,58 @@
+Lista de cosas que hacer:
+* Comprar leche
+* Limpiar la casa
+* Llamar a mi madre
+Receta:
+Ingredientes:
+
+1 taza de harina
+1/2 taza de azúcar
+1/4 taza de cacao en polvo
+1 cucharadita de bicarbonato de sodio
+1/2 cucharadita de sal
+1/2 taza de leche
+1/4 taza de aceite vegetal
+1 huevo
+Instrucciones:
+
+Precalentar el horno a 180 grados Celsius.
+En un tazón grande, mezclar la harina, el azúcar, el cacao en polvo, el bicarbonato de sodio y la sal.
+En un tazón pequeño, mezclar la leche, el aceite vegetal y el huevo.
+Agregar los ingredientes húmedos a los ingredientes secos y mezclar hasta que estén combinados.
+Verter la masa en un molde para pasteles engrasado y enharinado.
+Hornear durante 30 minutos o hasta que un palillo insertado en el centro salga limpio.
+Poema:
+La vida es un viaje
+Con muchos altibajos
+Pero siempre hay esperanza
+Al final del camino
+Historia:
+Había una vez un niño llamado Juan
+Que vivía en un pequeño pueblo
+Un día, Juan encontró un cachorro
+Y decidió llevarlo a casa
+El cachorro era muy lindo
+Y Juan lo llamó Pelusa
+Juan y Pelusa se hicieron amigos inseparables
+Y jugaban juntos todos los días
+Un día, Juan y Pelusa estaban jugando en el bosque
+Cuando Pelusa se perdió
+Juan buscó a Pelusa por todas partes
+Pero no pudo encontrarlo
+Juan estaba muy triste
+Pero no se dio por vencido
+Continuó buscando a Pelusa durante días
+Hasta que finalmente lo encontró
+Juan estaba muy feliz
+De haber encontrado a su amigo
+Juan y Pelusa vivieron felices para siempre
+Configuración de un servidor:
+ip: 192.168.1.100
+port: 80
+Datos de un sensor:
+temperatura: 25 grados Celsius
+humedad: 60%
+Datos de una base de datos:
+id: 1
+nombre: Juan
+apellido: Pérez
