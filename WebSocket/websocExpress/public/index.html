@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Chat</title>
+     <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+#chatContainer {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chatMessages {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#chatMessages li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#messageInput {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+#sendButton {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: #45a049;
+}
+
+     </style>
+</head>
+<body>
+    <h1>WebSocket Chat</h1>
+    <ul id="chatMessages"></ul>
+    <input type="text" id="messageInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+       
+       // Establecer conexión WebSocket
+const socket = new WebSocket('ws://localhost:3000'); // Reemplaza con la URL de tu servidor WebSocket
+
+// Manipular eventos de conexión
+socket.addEventListener('open', (event) => {
+    console.log('Conexión establecida con el servidor WebSocket');
+});
+
+socket.addEventListener('message', (event) => {
+    // Manipular mensajes recibidos desde el servidor
+    const chatMessages = document.getElementById('chatMessages');
+    const newMessage = document.createElement('li');
+    newMessage.textContent = event.data;
+    chatMessages.appendChild(newMessage);
+});
+
+socket.addEventListener('close', (event) => {
+    console.log('Conexión cerrada con el servidor WebSocket');
+});
+
+// Función para enviar mensajes al servidor
+function sendMessage() {
+    const messageInput = document.getElementById('messageInput');
+    const message = messageInput.value;
+
+    // Enviar el mensaje al servidor
+    socket.send(message);
+
+    // Limpiar el campo de entrada después de enviar
+    messageInput.value = '';
+}
+
+
+    </script>
+</body>
+</html>
